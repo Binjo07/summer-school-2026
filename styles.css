@@ -493,3 +493,164 @@ footer {
     height: 140px;
   }
 }
+/* ========== CLASS OF 2026 – GLASS HERO ========== */
+/* ========== CLASS OF 2026 – FIREWORKS + PHOTO ========== */
+.graduation-fireworks {
+  background: #0f283d;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== PHOTO WITH FIREWORKS OVERLAY ===== */
+.fireworks-container {
+  position: relative;
+  width: 100%;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+.graduation-photo {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  display: block;
+}
+
+#fireworksCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Allows clicks to pass through to the photo */
+}
+
+/* ===== TEXT BELOW THE PHOTO ===== */
+.graduation-text-below {
+  padding: 4rem 1.5rem 3rem;
+  background: #0f283d;
+  text-align: center;
+}
+
+.graduation-text-below .graduation-badge {
+  font-size: 4rem;
+  margin-bottom: 0.3rem;
+}
+
+.graduation-text-below h2 {
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.graduation-text-below .graduation-subtitle {
+  font-size: 1.4rem;
+  color: #f5a623;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.graduation-divider {
+  width: 70px;
+  height: 3px;
+  background: #f5a623;
+  margin: 0 auto 1.5rem;
+}
+
+.graduation-text-below .graduation-message {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #d0dde9;
+  margin-bottom: 2rem;
+}
+
+.graduation-text-below .graduation-message strong {
+  color: #fff;
+}
+
+.graduation-highlight {
+  display: inline-block;
+  background: #f5a623;
+  color: #1a3a5c;
+  padding: 0.2rem 1.2rem;
+  border-radius: 30px;
+  font-weight: 700;
+}
+
+.graduation-text-below .graduation-details {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  color: #d0dde9;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.graduation-text-below .graduation-details span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .fireworks-container {
+    max-height: 350px;
+  }
+
+  .graduation-photo {
+    max-height: 350px;
+  }
+
+  .graduation-text-below {
+    padding: 2.5rem 1rem 2rem;
+  }
+
+  .graduation-text-below h2 {
+    font-size: 2.2rem;
+  }
+
+  .graduation-text-below .graduation-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .graduation-text-below .graduation-message {
+    font-size: 1rem;
+  }
+
+  .graduation-text-below .graduation-details {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fireworks-container {
+    max-height: 250px;
+  }
+
+  .graduation-photo {
+    max-height: 250px;
+  }
+
+  .graduation-text-below h2 {
+    font-size: 1.8rem;
+  }
+
+  .graduation-text-below .graduation-badge {
+    font-size: 3rem;
+  }
+
+  .graduation-text-below .graduation-details {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
